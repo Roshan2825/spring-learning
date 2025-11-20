@@ -1,0 +1,41 @@
+# Maven target folder
+/target/
+
+# Compiled class files
+*.class
+
+# JAR, WAR, EAR
+*.jar
+*.war
+*.ear
+
+# Eclipse / IntelliJ / VS Code project files
+.idea/
+*.iml
+.vscode/
+
+# Logs
+logs/
+*.log
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / Secrets
+.env
+*.properties
+application.properties
+application-local.yml
+application.yml
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Backup / temp files
+*.bak
+*.tmp
+
+# Spring Boot specific
+spring.log

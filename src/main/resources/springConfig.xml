@@ -5,9 +5,13 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean 
-        id="student" class="com.example.Student">
-        <property name="age" value="30"/>
-        <property name="rno" value="20"/>
+        id="student" class="com.example.Student" autowire="constructor">
+        <!-- <property name="age" value="30"/>
+        <property name="rno" value="20"/> -->
+        <!-- <property name="writer" ref="writer"/> -->
+        <constructor-arg index="0" value="21"/>
+        <constructor-arg index="1" value="20"/>
+        <!-- <constructor-arg index="2" ref="pc1"/> -->
     </bean>
 
     <bean 
@@ -16,6 +20,15 @@
 
     <bean 
         id="teacher" class="com.example.Teacher">
+    </bean>
+    <bean 
+        id="pen1" class="com.example.Pen">
+    </bean>
+    <bean 
+        id="pencil1" class="com.example.Pencil" primary="true">
+    </bean>
+    <bean 
+        id="sk1" class="com.example.Sketch">
     </bean>
 
 </beans>

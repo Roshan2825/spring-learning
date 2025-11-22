@@ -8,8 +8,8 @@ public class App
 {
     public static void main(String[] args) {
         ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
-        Student st = (Student) context.getBean("s1");
-        st.show();
+        Student st = (Student) context.getBean(Student.class);
+        System.out.println(st);
     }
 
 }
